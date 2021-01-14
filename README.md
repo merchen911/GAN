@@ -1,3 +1,1 @@
 # GAN 
-## for Oversampling method
-
