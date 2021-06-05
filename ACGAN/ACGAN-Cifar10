@@ -105,20 +105,20 @@ class ACGAN():
         model.add(keras.layers.Dropout(0.5))
         
         model.add(keras.layers.Conv2D(32, kernel_size=3, padding="same",activation=self.relu))
-        model.add(keras.layers.Dropout(0.5))
         model.add(keras.layers.BatchNormalization(momentum=0.8))
+        model.add(keras.layers.Dropout(0.5))
         
         model.add(keras.layers.Conv2D(64, kernel_size=3, strides=2, padding="same",activation=self.relu))
-        model.add(keras.layers.Dropout(0.5))
         model.add(keras.layers.BatchNormalization(momentum=0.8))
+        model.add(keras.layers.Dropout(0.5))
         
         model.add(keras.layers.Conv2D(128, kernel_size=3, padding="same",activation=self.relu))
-        model.add(keras.layers.Dropout(0.5))
         model.add(keras.layers.BatchNormalization(momentum=0.8))
+        model.add(keras.layers.Dropout(0.5))
         
         model.add(keras.layers.Conv2D(256, kernel_size=3, strides=2, padding="same",activation=self.relu))
-        model.add(keras.layers.Dropout(0.5))
         model.add(keras.layers.BatchNormalization(momentum=0.8))
+        model.add(keras.layers.Dropout(0.5))
                 
         model.add(keras.layers.Conv2D(512, kernel_size=3, padding="same",activation=self.relu))
         model.add(keras.layers.Dropout(0.25))
